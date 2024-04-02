@@ -1,7 +1,7 @@
 const { Station } = require("../../models")
 
 const checkExist=(Model) => {
-   return async (req, res, next) => {
+   return async (req, res, next) => {0
         const { id } = req.params;
         //kiểm tra station có tồn tại hay không
         const station = await Model.findOne({

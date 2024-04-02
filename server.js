@@ -13,7 +13,7 @@ app.use("/api/v1",rootRouter);
 
 //cai static file 
 const publicPathDirectory = path.join(__dirname, "./public");
-app.use(express.static(publicPathDirectory));
+app.use("/public",express.static(publicPathDirectory));
 
 //lang nghe su kien ket noi
 app.listen(7000, async () => {
